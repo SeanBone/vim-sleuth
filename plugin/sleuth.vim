@@ -39,7 +39,7 @@ function! s:Guess(source, detected, lines) abort
   let is_python = ext ==# 'py' || get(a:lines, 0, '') =~# '^#!.*\<python\d\=\>'
   let options = {}
   let heuristics = {'spaces': 0, 'hard': 0, 'soft': 0, 'checked': 0, 'indents': {}}
-  let tabstop = get(a:detected.options, 'tabstop', [8])[0]
+  let tabstop = get(a:detected.options, 'tabstop', [4])[0]
   let softtab = repeat(' ', tabstop)
   let waiting_on = ''
   let prev_indent = -1
