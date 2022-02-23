@@ -1,5 +1,8 @@
 # sleuth.vim
 
+**Note:** this fork only makes one simple change to the original code. 
+The default tabstop was changed from 8 to 4.
+
 This plugin automatically adjusts `'shiftwidth'` and `'expandtab'`
 heuristically based on the current file, or, in the case the current file is
 new, blank, or otherwise insufficient, by looking at other files of the same
@@ -29,7 +32,7 @@ support:
 ## Notes
 
 * If your file is consistently indented with hard tabs, `'shiftwidth'` will be
-  set to your `'tabstop'`.  Otherwise, a `'tabstop'` of 8 is enforced, unless
+  set to your `'tabstop'`.  Otherwise, a `'tabstop'` of **4** is enforced, unless
   another value is explicitly declared in a modeline or EditorConfig.
 
 ## Self-Promotion
